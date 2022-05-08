@@ -1,3 +1,6 @@
+// My solution
+// Time Complexity O(n^2)
+
 var groupAnagrams = function (strs) {
   let copy = [...strs];
   let answer = [];
@@ -51,4 +54,23 @@ var groupAnagrams = function (strs) {
   }
 
   return realAnswer;
+};
+
+// Best Answer
+// Time Complexity O(n)
+
+const groupAnagrams = (strs) => {
+  const map = {};
+
+  for (let str of strs) {
+    const key = [...str].sort().join("");
+
+    if (!map[key]) {
+      map[key] = [];
+    }
+
+    map[key].push(str);
+  }
+
+  return Object.values(map);
 };
