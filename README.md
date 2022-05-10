@@ -6,4 +6,4 @@
 
 ### Resources
 
-- [Based on](https://neetcode.io/) - NeetCode.io website
+- [NeetCode.io](https://neetcode.io/)
