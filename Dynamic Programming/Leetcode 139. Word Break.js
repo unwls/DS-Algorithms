@@ -1,26 +1,30 @@
-var wordBreak = function (s, wordDict) {
-  const hash = {};
-  let left = 0;
-  let right = 1;
+const wordBreak = (s, wordDict) => {
+  if (wordDict == null || wordDict.length === 0) return false;
+  const set = new Set(wordDict);
 
-  while (true) {
-    const currentSubstring = s.substring(left, right);
+  // When s = 'catsandog', wordDict = ['cats', 'ca', 'ts']
+  // After 'cats' and 'ca', it will become 'andog', 'tsandog'
+  // For 'tsandog', after 'ts', it will become 'andog' again, visited set here is for memoization
+  const visited = new Set();
+  const q = [0];
 
-    if (hash[currentSubstring]) {
-      left = right;
-      right = left + 1;
-    } else if (wordDict.includes(currentSubstring)) {
-      hash[currentSubstring] = 1;
-      left = right;
-      right = left + 1;
-    } else {
-      right++;
+  while (q.length) {
+    const start = q.shift();
+
+    if (!visited.has(start)) {
+      for (let end = start + 1; end <= s.length; end++) {
+        if (set.has(s.slice(start, end))) {
+          if (end === s.length) return true;
+          q.push(end);
+          console.log(q);
+          console.log(s.slice(start, end));
+        }
+      }
+
+      visited.add(start);
     }
-
-    if (left === s.length && right >= s.length) {
-      return true;
-    }
-
-    if (right >= s.length * 2) return false;
   }
+  return false;
 };
+
+console.log(wordBreak("aaaaaaa", ["aaaa", "aaa"]));
