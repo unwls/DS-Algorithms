@@ -39,4 +39,24 @@ var canJump = function (nums) {
   return false;
 };
 
-console.log(canJump([2, 3, 1, 1, 4]));
+// Recursion Answer
+
+var canJump = function (nums) {
+  function permute(idx) {
+    if (idx >= nums.length - 1) {
+      return true;
+    }
+    if (nums[idx] === 0) {
+      return false;
+    }
+
+    for (let i = nums[idx]; i >= 1; i--) {
+      if (permute(idx + i)) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+  return permute(0);
+};
