@@ -1,9 +1,3 @@
-/**
- * @param {string} text1
- * @param {string} text2
- * @return {number}
- */
-
 var longestCommonSubsequence = function (text1, text2) {
   let dpTable = [];
 
@@ -26,3 +20,10 @@ var longestCommonSubsequence = function (text1, text2) {
 
 // Visualizing DP 2D DP table
 // Longest common subsequence
+// Time Complexity is O(m * n)
+// Space Complexity is O(m * n)
+
+// Useful video
+// https://www.youtube.com/watch?v=ASoaQq66foQ
+// https://www.youtube.com/watch?v=sSno9rV8Rhg
+// https://www.youtube.com/watch?v=NnD96abizww <- Tushar Roy
