@@ -13,3 +13,6 @@ function lengthOfLIS(nums) {
 
   return Math.max(...arr);
 }
+
+// Time Complexity O(n ^ 2)
+// Space Complexity O(n)
