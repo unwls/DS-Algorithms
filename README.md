@@ -1,4 +1,4 @@
-# Leetcode questions record
+## Algorithm questions record
 
 ### Purpose
 
@@ -7,3 +7,5 @@
 ### Resources
 
 - [NeetCode.io](https://neetcode.io/)
+- [Leetcode](https://leetcode.com/)
+- [Programmers](https://school.programmers.co.kr/learn/challenges)
