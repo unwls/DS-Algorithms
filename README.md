@@ -63,7 +63,7 @@ Hashing algorithms work the same as the Searching algorithm but they contain an 
 > 💡 Some common problems that can be solved through the Hashing Algorithm in password verification.
 
 
-### 📚 Resources
+## 📚 Resources
 
 - [NeetCode.io](https://neetcode.io/)
 - [Leetcode](https://leetcode.com/)
