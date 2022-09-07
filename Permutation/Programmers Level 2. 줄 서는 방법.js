@@ -10,8 +10,7 @@ function solution(n, k) {
     caseNum = caseNum / people.length;
     answer.push(...people.splice(Math.floor((k - 1) / caseNum), 1));
     k = k % caseNum;
-
-    // console.log(...people.splice(Math.floor((k - 1) / caseNum), 1));
+    console.log(answer);
   }
 
   return answer;
@@ -19,6 +18,4 @@ function solution(n, k) {
 
 console.log(solution(3, 5));
 
-// 1 2 3
-// 2 3 2
-// 3 1 1
+// Question: https://school.programmers.co.kr/learn/courses/30/lessons/12936

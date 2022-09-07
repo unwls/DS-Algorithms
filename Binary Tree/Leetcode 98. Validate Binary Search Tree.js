@@ -10,7 +10,7 @@ var isValidBST = function (root) {
   while (root != null || !stack.length) {
     while (root != null) {
       stack.push(root);
-      root = root.left; 
+      root = root.left;
     }
 
     root = stack.pop();
@@ -25,3 +25,5 @@ var isValidBST = function (root) {
 
   return true;
 };
+
+// Question: https://leetcode.com/problems/validate-binary-search-tree/

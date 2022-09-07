@@ -28,3 +28,5 @@ const wordBreak = (s, wordDict) => {
 };
 
 console.log(wordBreak("aaaaaaa", ["aaaa", "aaa"]));
+
+// Question: https://leetcode.com/problems/word-break/

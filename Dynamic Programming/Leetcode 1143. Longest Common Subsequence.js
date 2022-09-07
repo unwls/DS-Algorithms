@@ -27,3 +27,5 @@ var longestCommonSubsequence = function (text1, text2) {
 // https://www.youtube.com/watch?v=ASoaQq66foQ
 // https://www.youtube.com/watch?v=sSno9rV8Rhg
 // https://www.youtube.com/watch?v=NnD96abizww <- Tushar Roy
+
+// Question: https://leetcode.com/problems/longest-common-subsequence/

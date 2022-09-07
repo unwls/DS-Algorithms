@@ -4,6 +4,7 @@ var permute = function (nums) {
   const bfs = (selected) => {
     if (selected.length === nums.length) {
       ans.push(selected);
+
       return;
     }
 
@@ -20,3 +21,5 @@ var permute = function (nums) {
 };
 
 console.log(permute([1, 2, 3])); // [[ 1, 2, 3 ],[ 1, 3, 2 ],[ 2, 1, 3 ],[ 2, 3, 1 ],[ 3, 1, 2 ],[ 3, 2, 1 ]]
+
+// Question: https://leetcode.com/problems/permutations/

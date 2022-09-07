@@ -18,3 +18,5 @@ function solution(goal) {
 
   return wordsCollection.indexOf(goal) + 1;
 }
+
+// Question: https://school.programmers.co.kr/learn/courses/30/lessons/84512

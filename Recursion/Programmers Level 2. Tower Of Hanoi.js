@@ -12,5 +12,5 @@ const helperFunction = (disk, departure, destination, waypoint) => {
   ];
 };
 
-// Question link: https://school.programmers.co.kr/learn/courses/30/lessons/12946
 // Useful link: https://shoark7.github.io/programming/algorithm/tower-of-hanoi
+// Question: https://school.programmers.co.kr/learn/courses/30/lessons/12946
